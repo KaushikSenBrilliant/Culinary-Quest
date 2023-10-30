@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary Quest - Discover Delicious Recipes</title> <!--label of our webpage-->
+  <link rel="stylesheet" href="./recipe.css" class="css">
+</head>
+<body>
+  <section>
+    <div class="container initial"> <!--here we are styling multiple classes-->
+      <h1 class="brand">Culinary Quest!</h1> <!--logo/heading of the app-->
+      <form>
+        <input type="text" placeholder="Search Your Recipe...">
+        <ion-icon name="search"></ion-icon><!--adding small icon symbol-->
+      </form>
+<!--displaying individual food items in a search result format,with images,titles,a button for viewing more details and additional information like calories-->
+      <div class="search-result">
+        <div class="item">
+          <img src="./img-1.jpg" alt=""> <!--this is our recipe/food item image and using this image as a placeholder-->
+          <div class="flex-container">
+            <h1 class="title">This is a recipe</h1> <!--title of the food item/placeholder title-->
+            <a class="view-button" href="#">View Recipe</a> <!--anchor element serves as a button and # doesnt lead to a new page-->
+          </div>
+          <p class="item-data">Calories: 120</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> <!--linking the icon external cdn-->
+  <script src="./recipe.js"></script> <!--linking the js file-->
+</body>
+</html>
